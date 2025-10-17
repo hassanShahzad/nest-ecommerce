@@ -19,7 +19,7 @@ export class User {
   @Column({ unique: true })
   username: string;
   @Column()
-  password: string;
+  password?: string;
   @OneToMany(() => Order, (order) => order.customer)
   orders: Order[];
   // @OneToMany(() => Review, (review) => review.user)

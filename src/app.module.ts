@@ -7,6 +7,7 @@ import { Order } from './orders/entities/order.entity';
 import { CommonModule } from './common/common.module';
 import { UsersModule } from './users/users.module';
 import { User } from './users/entities/user.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { User } from './users/entities/user.entity';
     OrdersModule,
     CommonModule,
     UsersModule,
+    AuthModule,
   ],
 })
 export class AppModule {}
