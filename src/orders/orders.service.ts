@@ -64,10 +64,10 @@ async getOrders(page = 1, limit = 10) {
         price: true,
         image: true,
       },
-      customer: {
-        id: true,
-        username: true,
-      },
+      // customer: {
+      //   id: true,
+      //   username: true,
+      // },
     },
   });
 
